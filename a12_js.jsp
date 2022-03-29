@@ -1,35 +1,35 @@
 <%@ page  contentType="text/html; charset=EUC-KR" %>
 http://localhost:8080/jsp/a12_js.jsp<br>
 <script>
-    score1 = prompt("Á¡¼ö ÀÔ·Â");
+    score1 = prompt("ì ìˆ˜ ì…ë ¥");
     score = eval(score1);
-    String grade;
+    var grade;
     if(score<=100){
         switch(score/10) {
             case 10:
                 grade = "A+";
-                document.write("Á¡¼ö = "+score+", ÇĞÁ¡ = "+grade);
+                document.write("ì ìˆ˜ = "+score+", í•™ì  = "+grade);
                 break;
             case 9:
                 grade = "A";
-                document.write("Á¡¼ö = "+score+", ÇĞÁ¡ = "+grade);
+                document.write("ì ìˆ˜ = "+score+", í•™ì  = "+grade);
                 break;
             case 8:
                 grade = "B";
-                document.write("Á¡¼ö = "+score+", ÇĞÁ¡ = "+grade);
+                document.write("ì ìˆ˜ = "+score+", í•™ì  = "+grade);
                 break;
             case 7:
                 grade = "C";
-                document.write("Á¡¼ö = "+score+", ÇĞÁ¡ = "+grade);
+                document.write("ì ìˆ˜ = "+score+", í•™ì  = "+grade);
                 break;
             default:
                 grade ="F";
-                document.write("Á¡¼ö = "+score+", ÇĞÁ¡ = "+grade);
+                document.write("ì ìˆ˜ = "+score+", í•™ì  = "+grade);
                 break;
         }
     }
     else {
-        document.write(score+"Àº ¸¸Á¡ÀÎ 100Á¡ ÀÌ»óÀ¸·Î Àß¸ø ÀÔ·Â");
+        document.write(score+"ì€ ë§Œì ì¸ 100ì  ì´ìƒìœ¼ë¡œ ì˜ëª» ì…ë ¥");
     }
 </script>
 
