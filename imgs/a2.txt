@@ -1,0 +1,11 @@
+<!DOCTYPE>
+<html>
+<body>
+그림 보여요<br>
+<img src="m1.jpg"> <br>
+그림2 보여요<br>
+<img src="m2.jpg"> <br>
+그림3 보여요<br>
+<img src="m3.jpg"> <br>
+<body>
+</html>
