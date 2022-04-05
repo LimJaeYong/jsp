@@ -1,0 +1,28 @@
+<%@ page contentType="text/html; charset=euc-kr"%>
+<html>
+    <meta charset="utf-8">
+    <style>
+        img{width:70px; height:70px;}
+    </style>
+    <body>
+        <hr>
+        <form action="a22.jsp" method="post">
+            방문자 : <input type="text" name="n1"><br>
+            아래의 상품을 선택하시면 장바구니로 이동됩니다.<br>
+            <table>
+                <tr>
+                    <td><img src="imgs\1.jpg"></td>
+                    <td><img src="imgs\2222.jpg"></td>
+                    <td><img src="imgs\3.jpg"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="p1">1000원</td>
+                    <td><input type="checkbox" name="p2">2000원</td>
+                    <td><input type="checkbox" name="p3">3000원</td>
+                </tr>
+            </table>
+            <input type="submit" value="상품선택">
+            <input type="reset" value="상품취소">
+        </form>
+    </body>
+</html>
