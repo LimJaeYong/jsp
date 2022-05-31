@@ -40,9 +40,9 @@
                 %>
 
                 <form method="post" action="p209_update.jsp">
-                <input type ="hidden" value="<%=p_id%>" name="p23_id"><br>
-                이름:<input type ="text" value="<%=rs.getString(2)%>" name="p23_name"><br>
-                메일:<input type ="text" value="<%=rs.getString(3)%>" name="p23_mail"><br><br>
+                <input type ="hidden" value="<%=p_id%>" name="u_id"><br>
+                이름:<input type ="text" value="<%=rs.getString(2)%>" name="u_name"><br>
+                메일:<input type ="text" value="<%=rs.getString(3)%>" name="u_mail"><br><br>
                 <input type="submit" value="수정하기"><br>
                 <a href ="p209_delete.jsp?p_id=<%=p_id%>"><br>삭제페이지</a>
                 </form>
@@ -56,10 +56,13 @@
 
 
 
-
+        pst.close();
         rs.close();
         conn.close();
     } catch(SQLException e) {
+        out.println(e);
+    } catch(NumberFormatException e) {
+        out.println("ID를 입력해주세요.<br>");
         out.println(e);
     }
 %>
