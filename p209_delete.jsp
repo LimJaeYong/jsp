@@ -38,5 +38,7 @@
     }
 %>
 
+<jsp:forward page="p209_selectall.jsp"/>
+
 <a href="p209_main.html">메인으로</a>
     
